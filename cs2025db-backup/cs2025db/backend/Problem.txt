@@ -1,0 +1,7 @@
+Challenges:
+
+1)Finish completing the other two tables in the Library database, add a few books, members, and borrowed books into your tables for testing the server. Once completed, make sure you saved the database (ie, write changes), submitted the database file
+
+2)Once you created your database, download  Lesson 59 Activity zip file, extract and copy your database file into your lesson 59 activity folder and write one route for each table (so there are three routes). The SQL should get all columns for each table..
+
+3)You will need to change the database name to what every your database file name is.

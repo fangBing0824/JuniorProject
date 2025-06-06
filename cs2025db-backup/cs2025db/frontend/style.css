@@ -1,0 +1,235 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e7eef6;
+  color: #1b1b1d;
+  scroll-behavior: smooth;
+}
+
+#root{
+  margin:0;
+  display:flex;
+  flex-direction: column;
+
+
+
+  #header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+    height: 256px;
+    border-radius: 32px;
+    background-color: #81a5ce;
+    color: #f8ebeb;
+
+  }
+
+  #nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0px 0px 8px #00000015;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 16px;
+    margin-top: 16px;
+
+    .panel{
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: center;
+      min-width: 256px;
+      margin-bottom: 16px;
+      box-shadow: 0px 0px 8px #00000015;
+      padding: 12px;
+      border-radius: 16px;
+
+      .search{
+        display: flex;
+        gap: 16px
+      }
+    }
+
+    #centerpanel{
+      flex:1;
+      height: 100dvh;
+      height: 100vh;
+      /* make centerpanel scrollable */
+      overflow-x: scroll;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.button{
+  text-decoration: none;
+  background-color: #81a5ce;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 16px;
+  color: #f8ebeb;
+  border: 4px solid #00000000;
+  box-shadow: 0px 0px 8px #00000015;
+  font-size: medium;
+  font-weight: 900;
+}
+
+.active{
+  background-color: #f8ebeb;
+  color: #1b1b1d;
+  border: 4px solid #81a5ce;
+}
+
+input[type=text]{
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 16px;
+  color: #1b1b1d;
+  border: 0;
+  box-shadow: 0px 0px 8px #00000015;
+  font-size: medium;
+  font-weight: 900;
+  outline: none;
+}
+
+
+/* filp card styles */
+.flip-card {
+    background-color: transparent;
+    width: 300px;  /* Increased from 300px */
+    height: 450px;  /* Increased from 450px */
+    perspective: 1000px;
+    margin: 15px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.img-container {
+    background-color: #00000017;
+    margin: 8px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.actor-img {
+    width: 200px;
+    height: 250px;
+}
+
+.drama-img {
+    width: 100%;
+    height: 200px;
+}
+
+.flip-card-back {
+    background-color: #2874A6;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h3 {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.actors-container {
+    padding: 10px;
+    max-height: 300px; /* Increased from 200px */
+    overflow-y: auto;
+}
+
+.actor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.actor-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.actor-card h4 {
+    margin: 5px 0;
+}
+
+.actor-card p {
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+
+.actor-info {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.actor-info h4 {
+    margin: 0;
+    color: #333;
+}
+
+.actor-info p {
+    margin: 2px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+

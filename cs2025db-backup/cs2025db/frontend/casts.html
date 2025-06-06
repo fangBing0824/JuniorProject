@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- import the script.js file -->
+    <!-- We need to import JQUERY Library to make the api call-->
+
+  </head>
+  
+  <!-- Call the int function when website loads -->
+  <body onload="init()">
+    <div id="root">
+      <!--  Header or Banner -->
+      <div id="header">
+        <h1> MY DRAMAS </h1>
+      </div>
+      <!--  nav bar -->
+      <nav id='nav'>
+        <a href="index.html#centerpanel" class="button">HOME</a>   
+        <a href="actors.html#centerpanel" class="button">ACTORS</a> 
+        <a href="#centerpanel" class="button active">CASTS</a>
+
+      </nav>
+      
+      <div class="container">
+        
+        <div class='panel'>
+          <h2> Search </h2>
+          <div class="search">
+            <input type="text" id="search" placeholder="Search for a Drama..." onkeyup="generateCards()" />
+            <button class="button" onclick="generateCards()">Search</button>
+          </div>
+        </div>
+        
+        <div id='centerpanel' >
+		
+        </div>
+        
+        <div class='panel' id='rightpanel'>
+          when Clicked, this panel will show the details of the drama.
+        </div>
+        
+      </div>
+
+      <div id='foot'>
+        <h3> Footer </h3>
+      </div>
+
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./casts.js"></script>
+  </body>
+</html>
